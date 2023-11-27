@@ -1,6 +1,9 @@
-﻿namespace VroomVroom.Classes;
+﻿using VroomVroom.Vehicules;
 
-public class Catalogue
+namespace VroomVroom.Classes;
+
+public interface IFabriqueVehicule 
 {
-    
+    Automobile CreateAutomobile(string modele, string couleur, int puissance, double espace);
+    Scooter CreateScooter(string modele, string couleur, int puissance);
 }
